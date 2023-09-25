@@ -8,11 +8,11 @@ This GitHub repository documents my analysis of home sales data using Apache Spa
 
 The project encompassed the following key tasks:
 
-### Data Ingestion: I initiated the project by importing the necessary libraries and reading the home sales data from an AWS S3 bucket into a Spark DataFrame. Here's a snippet of the data:
+#### Data Ingestion: I initiated the project by importing the necessary libraries and reading the home sales data from an AWS S3 bucket into a Spark DataFrame. Here's a snippet of the data:
 
-### Creating Temporary View:To facilitate SQL-based analysis, I created a temporary view named "home_sales" from the DataFrame.
+#### Creating Temporary View:To facilitate SQL-based analysis, I created a temporary view named "home_sales" from the DataFrame.
 
-### Analyzing Home Prices: I executed SQL queries to answer specific questions about home prices and characteristics. Here are some example results:
+#### Analyzing Home Prices: I executed SQL queries to answer specific questions about home prices and characteristics. Here are some example results:
 
  ## Queries and Answers
 
