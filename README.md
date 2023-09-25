@@ -102,15 +102,13 @@ Certainly! Here are the answers to the queries along with their corresponding re
 
 ## Observations:
 
-In Query 9 (Uncached), the query runtime was approximately 1.18 seconds.
-In Query 13 (Parquet Data), the query runtime was significantly faster, at approximately 0.50 seconds.
-In both queries, we aimed to identify view ratings associated with average home prices greater than or equal to $350,000. The results are displayed in descending order of view ratings.
-
-The results show the view ratings (on the x-axis) and their corresponding average prices (on the y-axis). We can make the following observations:
-
-The average prices generally increase as view ratings improve, which is expected.
-View ratings 90 to 99 have notably higher average prices, indicating that properties with these views tend to command premium prices.
-The runtime improvement in Query 13 demonstrates the benefits of storing data in Parquet format and utilizing partitioning, making data retrieval more efficient.
+- In Query 9 (Uncached), the query runtime was approximately 1.18 seconds.
+- In Query 13 (Parquet Data), the query runtime was significantly faster, at approximately 0.50 seconds.
+- In both queries, we aimed to identify view ratings associated with average home prices greater than or equal to $350,000. The results are displayed in descending order of view ratings.
+- The results show the view ratings (on the x-axis) and their corresponding average prices (on the y-axis). We can make the following observations:
+- The average prices generally increase as view ratings improve, which is expected.
+- View ratings 90 to 99 have notably higher average prices, indicating that properties with these views tend to command premium prices.
+- The runtime improvement in Query 13 demonstrates the benefits of storing data in Parquet format and utilizing partitioning, making data retrieval more efficient.
 
 
 ### Project Conclusion
