@@ -8,7 +8,7 @@ This GitHub repository documents my analysis of home sales data using Apache Spa
 
 The project encompassed the following key tasks:
 
-**Data Ingestion:** I initiated the project by importing the necessary libraries and reading the home sales data from an AWS S3 bucket into a Spark DataFrame. Here's a snippet of the data:
+### Data Ingestion: I initiated the project by importing the necessary libraries and reading the home sales data from an AWS S3 bucket into a Spark DataFrame. Here's a snippet of the data:
 
    ```
    +--------------------+----------+----------+------+--------+---------+-----------+--------+------+----------+----+
@@ -22,15 +22,15 @@ The project encompassed the following key tasks:
    |5aa00529-0533-46b...|2019-01-30|      2017|218712|       2|        3|       1965|   14375|     2|         0|   7|
    ...
 
-**Creating Temporary View:** To facilitate SQL-based analysis, I created a temporary view named "home_sales" from the DataFrame.
+### Creating Temporary View:To facilitate SQL-based analysis, I created a temporary view named "home_sales" from the DataFrame.
 
-**Analyzing Home Prices:** I executed SQL queries to answer specific questions about home prices and characteristics. Here are some example results:
+### Analyzing Home Prices: I executed SQL queries to answer specific questions about home prices and characteristics. Here are some example results:
 
  ## Queries and Answers
 
 Certainly! Here are the answers to the queries along with their corresponding results:
 
-3. **Average Price for Four-Bedroom Houses by Year:**
+3. Average Price for Four-Bedroom Houses by Year:
    - Query: Calculate the average price for four-bedroom houses sold in each year, rounded to two decimal places.
    - Result:
      ```
@@ -44,7 +44,7 @@ Certainly! Here are the answers to the queries along with their corresponding re
      +----+---------+
      ```
 
-4. **Average Price of Three-Bedroom, Three-Bathroom Homes by Year Built:**
+4. Average Price of Three-Bedroom, Three-Bathroom Homes by Year Built:
    - Query: Calculate the average price of homes with three bedrooms and three bathrooms for each year the home was built, rounded to two decimal places.
    - Result:
      ```
@@ -62,7 +62,7 @@ Certainly! Here are the answers to the queries along with their corresponding re
      +----+---------+
      ```
 
-5. **Average Price of Three-Bedroom, Three-Bathroom, Two-Floor Homes with at least 2,000 Sq. Ft.:**
+5. Average Price of Three-Bedroom, Three-Bathroom, Two-Floor Homes with at least 2,000 Sq. Ft.:
    - Query: Calculate the average price of homes with three bedrooms, three bathrooms, two floors, and a living area of at least 2,000 square feet for each year they were built, rounded to two decimal places.
    - Result:
      ```
@@ -80,7 +80,7 @@ Certainly! Here are the answers to the queries along with their corresponding re
      +----+---------+
      ```
 
-6. **Average Price of Homes with a View (View Rating) and Price >= $350,000:**
+6. Average Price of Homes with a View (View Rating) and Price >= $350,000:
    - Query: Calculate the average price of homes for each distinct view rating where the average price is greater than or equal to $350,000.
    - Result (partial, due to the large number of view ratings):
      ```
